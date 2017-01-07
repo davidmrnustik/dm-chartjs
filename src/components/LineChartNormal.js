@@ -7,7 +7,7 @@ const options = {
     position: 'bottom',
     labels: {
       boxWidth: 14,
-      fontSize: 13,
+      fontSize: 11,
       fontStyle: 'bold',
       padding: 20,
       usePointStyle: true
@@ -24,7 +24,7 @@ const options = {
 
 export default React.createClass({
   render: function(){
-    const x = ["01", "02", "03", "04", "05", "06"];
+    const x = ["Enero", "Febrero", "Marzo", "Abril", "Junio", "Julio"];
     const y = this.props.chart;
     const dataChart = {
       labels: x,
@@ -39,6 +39,7 @@ export default React.createClass({
           pointRadius: 4,
           pointHoverRadius: 5,
           pointHoverBackgroundColor: 'rgba(18, 59, 106, 1.0)',
+          backgroundColor: 'rgba(18, 59, 106, 1.0)',
           fill: false,
           data: y[0]
         },
@@ -52,6 +53,7 @@ export default React.createClass({
           pointRadius: 4,
           pointHoverRadius: 5,
           pointHoverBackgroundColor: 'rgba(9, 160, 187,1.0)',
+          backgroundColor: 'rgba(9, 160, 187,1.0)',
           fill: false,
           data: y[1]
         },
@@ -65,6 +67,7 @@ export default React.createClass({
           pointRadius: 4,
           pointHoverRadius: 5,
           pointHoverBackgroundColor: 'rgba(15, 189, 119,1.0)',
+          backgroundColor: 'rgba(15, 189, 119,1.0)',
           fill: false,
           data: y[2]
         },
@@ -78,6 +81,7 @@ export default React.createClass({
           pointRadius: 4,
           pointHoverRadius: 5,
           pointHoverBackgroundColor: 'rgba(255, 197, 20,1.0)',
+          backgroundColor: 'rgba(255, 197, 20,1.0)',
           fill: false,
           data: y[3]
         }

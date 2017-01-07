@@ -3,7 +3,7 @@ import { Chart } from 'react-chartjs-2';
 
 export default React.createClass({
   componentDidMount: function(){
-    const x = ["01", "02", "03", "04", "05", "06"];
+    const x = ["Enero", "Febrero", "Marzo", "Abril", "Junio", "Julio"];
     const y = this.props.chart;
     const ctx = this.refs.chartBar.getContext('2d');
 

@@ -15,3 +15,7 @@ g > .react-d3-basic__bar:last-of-type {
 .legend-class {
   font-size: 1em;
 }
+#app {
+  width: 100%;
+  max-width: 500px;
+}

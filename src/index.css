@@ -27,6 +27,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'MuseoSans', arial, helvetica, sans-serif;
+  /*background: #F4F4F4;*/
 }
 g > .react-d3-basic__bar:first-of-type {
   fill: #0FBD77 !important;

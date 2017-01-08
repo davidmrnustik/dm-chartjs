@@ -9,9 +9,9 @@ const options = {
     position: 'left',
     labels: {
       boxWidth: 15,
-      fontSize: 14,
-      fontStyle: 'bold',
-      padding: 15,
+      fontSize: 13,
+      //fontStyle: 'bold',
+      padding: 20,
       usePointStyle: true
     }
   }

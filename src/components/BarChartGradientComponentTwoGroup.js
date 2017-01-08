@@ -45,6 +45,17 @@ export default React.createClass({
       ]
     };
     const options = {
+      legend: {
+        display: true,
+        position: 'bottom',
+        labels: {
+          boxWidth: 14,
+          fontSize: 11,
+          fontStyle: 'bold',
+          padding: 20,
+          usePointStyle: true
+        }
+      },
       showScale: false,
       scales: {
         xAxes: [{

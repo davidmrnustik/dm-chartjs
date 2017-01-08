@@ -29,6 +29,9 @@ export default React.createClass({
       ]
     };
     const options = {
+      legend: {
+        display: false
+      },
       showScale: false,
       scales: {
         xAxes: [{

@@ -15,30 +15,12 @@ const options = {
   }
 }
 export default React.createClass({
-  getInitialState: function(){
-    return {
-      label: this.props.label,
-      data: {
-        labels: ['Grupo 1', 'Grupo 2', 'Grupo 3'],
-        datasets: [
-          {
-            backgroundColor: ['rgba(15, 189, 119, 0.5)', 'rgba(255, 197, 20, 0.5)', 'rgba(255, 0, 0, 0.5)'],
-            hoverBackgroundColor: ['rgba(15, 189, 119, 0.8)', 'rgba(255, 197, 20, 0.8)', 'rgba(255, 0, 0, 0.8)'],
-            borderWidth: 1,
-            borderColor: ['rgba(15, 189, 119, 1.0)', 'rgba(255, 197, 20, 1.0)', 'rgba(255, 0, 0, 1.0)'],
-            hoverBorderWidth: 1,
-            hoverBorderColor: ['rgba(15, 189, 119, 1.0)', 'rgba(255, 197, 20, 1.0)', 'rgba(255, 0, 0, 1.0)'],
-            data: this.props.chart
-          }
-        ]
-      }
-    }
-  },
-  componentDidMount: function(){
-    this.setState({
-      label: this.props.label,
-      data: {
-        datasets: {
+  render() {
+    const label = this.props.label;
+    const data = {
+      labels: ['Grupo 1', 'Grupo 2', 'Grupo 3'],
+      datasets: [
+        {
           backgroundColor: ['rgba(15, 189, 119, 0.5)', 'rgba(255, 197, 20, 0.5)', 'rgba(255, 0, 0, 0.5)'],
           hoverBackgroundColor: ['rgba(15, 189, 119, 0.8)', 'rgba(255, 197, 20, 0.8)', 'rgba(255, 0, 0, 0.8)'],
           borderWidth: 1,
@@ -47,15 +29,13 @@ export default React.createClass({
           hoverBorderColor: ['rgba(15, 189, 119, 1.0)', 'rgba(255, 197, 20, 1.0)', 'rgba(255, 0, 0, 1.0)'],
           data: this.props.chart
         }
-      }
-    })
-  },
-  render() {
+      ]
+    }
     return (
       <div>
-        <p>{this.state.label}</p>
+        <p>{label}</p>
         <Doughnut
-          data={this.state.data}
+          data={data}
           options={options}
         />
       </div>

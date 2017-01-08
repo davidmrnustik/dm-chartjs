@@ -1,5 +1,7 @@
 import React from 'react';
-import { Doughnut } from 'react-chartjs-2';
+import { Chart, Doughnut } from 'react-chartjs-2';
+
+Chart.defaults.global.defaultFontFamily = '"MuseoSans", arial, helvetica, sans-serif';
 
 const options = {
   legend: {

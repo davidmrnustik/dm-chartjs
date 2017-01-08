@@ -31,6 +31,7 @@ class App extends Component {
         <BarChartGradientComponentTwo label="Matriculación" chart={[10, 5, 5]} />
         <br /><hr /><br />
         <BarChartGradientComponentTwo label="Propuesta venta" chart={[15, 10, 5]} />
+        <br /><hr /><br />
       </div>
     );
   }

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Chart } from 'react-chartjs-2';
 
+Chart.defaults.global.defaultFontFamily = '"MuseoSans", arial, helvetica, sans-serif';
+
 export default React.createClass({
   componentDidMount: function(){
     const x = ["Enero", "Febrero", "Marzo", "Abril", "Junio", "Julio"];

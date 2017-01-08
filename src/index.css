@@ -1,7 +1,32 @@
+@font-face {
+  font-family: 'MuseoSans';
+  font-weight: 500;
+  font-style: normal;
+  src:  url('./fonts/MuseoSans_500-webfont.eot');
+  src:  url('./fonts/MuseoSans_500-webfont.eot#iefix') format('embedded-opentype'),
+    url('./fonts/MuseoSans_500-webfont.ttf') format('truetype'),
+    url('./fonts/MuseoSans_500-webfont.woff2') format('woff2'),
+    url('./fonts/MuseoSans_500-webfont.woff') format('woff'),
+    url('./fonts/MuseoSans_500-webfont.svg?#museo_sans500') format('svg');
+}
+
+@font-face {
+  font-family: 'MuseoSans';
+  font-weight: 700;
+  font-style: normal;
+  src:  url('./fonts/MuseoSans_700-webfont.eot');
+  src:  url('./fonts/MuseoSans_700-webfont.eot#iefix') format('embedded-opentype'),
+  url('./fonts/MuseoSans_700-webfont.ttf') format('truetype'),
+  url('./fonts/MuseoSans_700-webfont.woff2') format('woff2'),
+  url('./fonts/MuseoSans_700-webfont.woff') format('woff'),
+  url('./fonts/MuseoSans_700-webfont.svg?#museo_sans500') format('svg');
+}
+
+
 body {
   margin: 0;
   padding: 0;
-  font-family: arial, helvetica, sans-serif;
+  font-family: 'MuseoSans', arial, helvetica, sans-serif;
 }
 g > .react-d3-basic__bar:first-of-type {
   fill: #0FBD77 !important;

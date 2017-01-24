@@ -7,7 +7,7 @@ Chart.defaults.global.defaultFontFamily = '"MuseoSans", arial, helvetica, sans-s
 export default React.createClass({
   componentDidMount() {
     const ctx = this.refs.chartBar.getContext('2d');
-    const x = ['Propuesta Venta', 'Matriculación', 'Entrega', 'Campañas'];
+    const x = this.props.xAxes;
     const y = this.props.chart;
     const gradientGreen = ctx.createLinearGradient(0, 0, 0, 250);
     gradientGreen.addColorStop(0, 'rgba(15, 189, 119,0.75)');   
@@ -53,7 +53,8 @@ export default React.createClass({
     const options = {
       legend: {
         display: true,
-        position: 'bottom',
+        position: 'top',
+        reverse: true,
         labels: {
           boxWidth: 14,
           fontSize: 11,
@@ -65,7 +66,7 @@ export default React.createClass({
       showScale: false,
       scales: {
         xAxes: [{
-          categoryPercentage: 0.9,
+          categoryPercentage: 0.6,
           barPercentage: 1.0,
           gridLines: {
             display: false

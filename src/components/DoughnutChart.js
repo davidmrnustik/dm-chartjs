@@ -5,7 +5,7 @@ Chart.defaults.global.defaultFontFamily = '"MuseoSans", arial, helvetica, sans-s
 
 const options = {
   legend: {
-    display: true,
+    display: false,
     position: 'left',
     labels: {
       boxWidth: 15,
@@ -14,21 +14,24 @@ const options = {
       padding: 20,
       usePointStyle: true
     }
+  },
+  ticks: {
+    reverse: false
   }
 }
 export default React.createClass({
   render() {
     const label = this.props.label;
     const data = {
-      labels: ['Grupo 1', 'Grupo 2', 'Grupo 3'],
+      labels: ['Grupo 3', 'Grupo 2', 'Grupo 1'],
       datasets: [
         {
-          backgroundColor: ['rgba(15, 189, 119, 0.5)', 'rgba(255, 197, 20, 0.5)', 'rgba(255, 0, 0, 0.5)'],
-          hoverBackgroundColor: ['rgba(15, 189, 119, 0.8)', 'rgba(255, 197, 20, 0.8)', 'rgba(255, 0, 0, 0.8)'],
+          backgroundColor: ['rgba(255, 0, 0, 0.5)', 'rgba(255, 197, 20, 0.5)', 'rgba(15, 189, 119, 0.5)'],
+          hoverBackgroundColor: ['rgba(255, 0, 0, 0.8)', 'rgba(255, 197, 20, 0.8)', 'rgba(15, 189, 119, 0.8)'],
           borderWidth: 1,
-          borderColor: ['rgba(15, 189, 119, 1.0)', 'rgba(255, 197, 20, 1.0)', 'rgba(255, 0, 0, 1.0)'],
+          borderColor: ['rgba(255, 0, 0, 1.0)', 'rgba(255, 197, 20, 1.0)', 'rgba(15, 189, 119, 1.0)'],
           hoverBorderWidth: 1,
-          hoverBorderColor: ['rgba(15, 189, 119, 1.0)', 'rgba(255, 197, 20, 1.0)', 'rgba(255, 0, 0, 1.0)'],
+          hoverBorderColor: ['rgba(255, 0, 0, 1.0)', 'rgba(255, 197, 20, 1.0)', 'rgba(15, 189, 119, 1.0)'],
           data: this.props.chart
         }
       ]

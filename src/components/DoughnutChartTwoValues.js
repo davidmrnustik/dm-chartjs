@@ -14,7 +14,7 @@ const options = {
 }
 export default React.createClass({
   makeCalc(arr) {
-    return (arr[1] / arr[0]) * 100;
+    return 100 - ((arr[1] / arr[0]) * 100);
   },
   componentDidMount() {
 
@@ -29,7 +29,7 @@ export default React.createClass({
         const text = this.makeCalc(this.props.chart) + "%";
         const textX = Math.round((width - c.measureText(text).width) / 2);
         const textY = height / 2;
-        c.fillStyle = this.makeCalc(this.props.chart) < 50 ? 'red' : '#454545';
+        c.fillStyle = this.makeCalc(this.props.chart) > 50 ? 'red' : '#454545';
         c.fillText(text, textX, textY);
       }
     })

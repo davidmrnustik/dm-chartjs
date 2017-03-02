@@ -28,7 +28,6 @@ export default React.createClass({
         c.textBaseline = "middle";
         const text = this.makeCalc(this.props.chart) + "%";
         const textX = Math.round((width - c.measureText(text).width) / 2);
-        console.log(text);
         const textY = height / 2;
         c.fillStyle = this.makeCalc(this.props.chart) < 50 ? 'red' : '#454545';
         c.fillText(text, textX, textY);

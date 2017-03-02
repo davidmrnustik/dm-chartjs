@@ -4,6 +4,7 @@ import './react-select.css';
 import BarChartGradientComponentTwo from './BarChartGradientComponentTwo.js';
 import BarChartGradientComponentTwoGroup from './BarChartGradientComponentTwoGroup.js';
 import Doughnut from './DoughnutChart.js';
+import DoughnutTwo from './DoughnutChartTwoValues.js';
 import LineChart from './LineChart.js';
 import LineChartNormal from './LineChartNormal.js';
 import LineChartNormal2 from './LineChartNormal2.js';
@@ -14,6 +15,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <DoughnutTwo label="Cobros" chart={[25000, 4000]} />
+        <br /><hr /><br />
         <LineChartNormal2 label="Expedientes" chart={[[30, 28, 27, 25, 27, 29], [20, 21, 19, 18, 20, 21], [15, 14, 13, 13, 12, 14], [15, 16, 15, 14, 12, 13], [12, 7, 9, 3, 10, 8], [6, 4, 10, 5, 14, 6], [8, 9, 13, 2, 10, 9]]} xAxes={["Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]}/>
         <br /><hr /><br />
         <LineChartPoint label="Expedientes" chart={[[30, , 27, 25, 27, 29, 12], [20, 21, 19, , 20, 21, 8], [15, 14, , 13, 12, 14, 5], [15, 16, 15, 14, , , ], [8, 10, , 5, , 9, ], [5, 7, 3, , 2, , 6], [10, 14, , 6, 5, 2, ]]} xAxes={[1, 3, 4, 6, 7, 8, 9]}/>

@@ -14,7 +14,7 @@ const options = {
 }
 export default React.createClass({
   makeCalc(arr) {
-    return 100 - ((arr[1] / arr[0]) * 100);
+    return (arr[0] / (arr[0] + arr[1])) * 100;
   },
   componentDidMount() {
 
@@ -26,7 +26,7 @@ export default React.createClass({
         const fontSize = (height / 114).toFixed(2);
         c.font = fontSize + "em sans-serif";
         c.textBaseline = "middle";
-        const text = this.makeCalc(this.props.chart) + "%";
+        const text = this.makeCalc(this.props.chart).toFixed(0) + "%";
         const textX = Math.round((width - c.measureText(text).width) / 2);
         const textY = height / 2;
         c.fillStyle = this.makeCalc(this.props.chart) > 50 ? 'red' : '#454545';
@@ -41,12 +41,12 @@ export default React.createClass({
       labels: x,
       datasets: [
         {
-          backgroundColor: ['rgba(255, 0, 0, 0.5)', 'rgba(15, 189, 119, 0.5)'],
-          hoverBackgroundColor: ['rgba(255, 0, 0, 0.8)', 'rgba(15, 189, 119, 0.8)'],
+          backgroundColor: ['rgba(255, 0, 0, 0.5)', 'rgba(186, 186, 186, 0.4)'],
+          hoverBackgroundColor: ['rgba(255, 0, 0, 0.8)', 'rgba(186, 186, 186, 0.8)'],
           borderWidth: 1,
-          borderColor: ['rgba(255, 0, 0, 1.0)', 'rgba(15, 189, 119, 1.0)'],
+          borderColor: ['rgba(255, 0, 0, 1.0)', 'rgba(186, 186, 186, 1.0)'],
           hoverBorderWidth: 1,
-          hoverBorderColor: ['rgba(255, 0, 0, 1.0)', 'rgba(15, 189, 119, 1.0)'],
+          hoverBorderColor: ['rgba(255, 0, 0, 1.0)', 'rgba(186, 186, 186, 1.0)'],
           data: y
         }
       ]

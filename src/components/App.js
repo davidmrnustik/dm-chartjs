@@ -15,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <DoughnutTwo label="Cobros" chart={[25000, 4000]} />
+        <DoughnutTwo label="Cobros" chart={[21000, 4000]} />
         <br /><hr /><br />
         <LineChartNormal2 label="Expedientes" chart={[[30, 28, 27, 25, 27, 29], [20, 21, 19, 18, 20, 21], [15, 14, 13, 13, 12, 14], [15, 16, 15, 14, 12, 13], [12, 7, 9, 3, 10, 8], [6, 4, 10, 5, 14, 6], [8, 9, 13, 2, 10, 9]]} xAxes={["Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]}/>
         <br /><hr /><br />

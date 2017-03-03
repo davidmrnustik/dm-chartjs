@@ -14,7 +14,7 @@ const options = {
 }
 export default React.createClass({
   makeCalc(arr) {
-    return (arr[0] / (arr[0] + arr[1])) * 100;
+    return ((arr[0] - arr[1]) / arr[0]) * 100;
   },
   componentDidMount() {
 
@@ -47,7 +47,7 @@ export default React.createClass({
           borderColor: ['rgba(255, 0, 0, 1.0)', 'rgba(15, 189, 119, 1.0)'],
           hoverBorderWidth: 1,
           hoverBorderColor: ['rgba(255, 0, 0, 1.0)', 'rgba(15, 189, 119, 1.0)'],
-          data: y
+          data: [y[0] - y[1], y[1]]
         }
       ]
     };

@@ -41,12 +41,12 @@ export default React.createClass({
       labels: x,
       datasets: [
         {
-          backgroundColor: ['rgba(255, 0, 0, 0.5)', 'rgba(186, 186, 186, 0.4)'],
-          hoverBackgroundColor: ['rgba(255, 0, 0, 0.8)', 'rgba(186, 186, 186, 0.8)'],
+          backgroundColor: ['rgba(255, 0, 0, 0.5)', 'rgba(15, 189, 119, 0.4)'],
+          hoverBackgroundColor: ['rgba(255, 0, 0, 0.8)', 'rgba(15, 189, 119, 0.8)'],
           borderWidth: 1,
-          borderColor: ['rgba(255, 0, 0, 1.0)', 'rgba(186, 186, 186, 1.0)'],
+          borderColor: ['rgba(255, 0, 0, 1.0)', 'rgba(15, 189, 119, 1.0)'],
           hoverBorderWidth: 1,
-          hoverBorderColor: ['rgba(255, 0, 0, 1.0)', 'rgba(186, 186, 186, 1.0)'],
+          hoverBorderColor: ['rgba(255, 0, 0, 1.0)', 'rgba(15, 189, 119, 1.0)'],
           data: y
         }
       ]

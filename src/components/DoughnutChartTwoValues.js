@@ -35,7 +35,7 @@ export default React.createClass({
     })
   },
   render() {
-    const x = ["Importe pendiente", "Importe venta"];
+    const x = ["Importe pendiente", "Pagado"];
     const y = this.props.chart;
     const dataChart = {
       labels: x,

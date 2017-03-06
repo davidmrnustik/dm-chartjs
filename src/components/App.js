@@ -15,6 +15,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <DoughnutTwo label="Cobros" chart={[25000, 19000]} />
+        <br /><hr /><br />
         <DoughnutTwo label="Cobros" chart={[25000, 0]} />
         <br /><hr /><br />
         <DoughnutTwo label="Cobros" chart={[25000, 4000]} />

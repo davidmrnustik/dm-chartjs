@@ -25,5 +25,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/davidmrnustik/dm-chartjs.git",
+  "author": "David Samper <davidm@memorandum.net>",
+  "license": "MIT"
 }

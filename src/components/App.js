@@ -4,6 +4,8 @@ import './react-select.css';
 import BarChartGradientComponentTwo from './BarChartGradientComponentTwo.js';
 import BarChartGradientComponentTwoGroup from './BarChartGradientComponentTwoGroup.js';
 import Doughnut from './DoughnutChart.js';
+import Doughnut2 from './DoughnutChart2.js';
+import Doughnut3 from './DoughnutChart3.js';
 import DoughnutTwo from './DoughnutChartTwoValues.js';
 import LineChart from './LineChart.js';
 import LineChartNormal from './LineChartNormal.js';
@@ -15,6 +17,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Doughnut3 chart={[2, 2, 2]} />
+        <br /><hr /><br />
+        <Doughnut2 chart={[247, 51, 13]} />
+        <br /><hr /><br />
         <DoughnutTwo label="Cobros" chart={[25000, 19000]} />
         <br /><hr /><br />
         <DoughnutTwo label="Cobros" chart={[25000, 0]} />
